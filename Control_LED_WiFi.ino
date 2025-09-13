@@ -1,13 +1,12 @@
-#include <WiFi.h>   // Gunakan WiFi.h untuk ESP32
+#include <WiFi.h>  
 
-// Ganti sesuai dengan WiFi kamu
-const char* ssid     = "Full 24 Jam";
-const char* password = "12345678";
+const char* ssid     = "Full 24 Jam"; // Ganti SSID Sesuai dengan Hostpot/Wifi Yang Anda ingim Gunakan
+const char* password = "12345678"; // Ganti Password sesuai hospot/wifi
 
 WiFiServer server(80);
 
-// Definisi pin LED
-#define LED1 2
+// Sesuaikan dengan PIN Yang Anda Gunakan
+#define LED1 2 
 #define LED2 16
 #define LED3 5
 #define LED4 19
