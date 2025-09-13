@@ -1,13 +1,12 @@
-#include <WiFi.h>   // Library WiFi untuk ESP32
+#include <WiFi.h>   
 
-const char* ssid     = "Full 24 Jam";  // SSID WiFi
-const char* password = "12345678";       // Password WiFi
+const char* ssid     = "Full 24 Jam";  // Sesuaikan dengan hospot/wifi anda
+const char* password = "12345678";       // Sesuaikan juga pada password
 
-int LED1 = 2; // 
-WiFiServer server(80); // Server berjalan di port 80
-
+int LED1 = 2; // sesuaikan dengan jalur pin yang anda pakai
+WiFiServer server(80); 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(115200); // pastikan anda setel serial di 115200
   delay(10);
 
   pinMode(LED1, OUTPUT);
